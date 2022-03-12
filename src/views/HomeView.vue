@@ -5,7 +5,7 @@
     <div id="text">Education is the passport to the future, 
       for tomorrow belongs to those who prepare for it today</div>
       <footer>
-    <a href="https://github.com/joshtlee/creative3">Github</a>
+    <a href="https://github.com/joshtlee/creative-three">Github</a>
   </footer>
   </div>
   
