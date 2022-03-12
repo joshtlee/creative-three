@@ -1,11 +1,8 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+<div class="app">
+  <router-view />
+</div>
+
 </template>
 
 <style>
@@ -17,16 +14,20 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+
+#menu {
+  font-family: Avenir;
+  font-size: 40px;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-template-areas: "none brand side";
+  
+}
+img{
+  height: 100px;
+  width: 100px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
