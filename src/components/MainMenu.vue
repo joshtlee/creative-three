@@ -16,6 +16,9 @@
       <router-link to="/scholarships">
         <p>Scholarships</p>
       </router-link>
+       <router-link to="/application">
+        <p>Application</p>
+      </router-link>
   </div>
 </template>
 
@@ -32,7 +35,7 @@ export default {
   font-size: 40px;
   text-decoration: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-template-areas: "none brand side";
   background-color: aqua;

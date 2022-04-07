@@ -25,7 +25,20 @@
           <img src="https://media.istockphoto.com/photos/african-male-graduate-handshaking-with-dean-picture-id475846573?k=20&m=475846573&s=612x612&w=0&h=d2XL6aTxfnHMUcZNmnkgeFBnz1d9vP6J7hfXxiP5088=" alt="">
         </div>
         <p id="quote">“The mind, once stretched by a new idea, never returns to its original dimensions.”</p>
+        <div id='email'>
+          <h2>Join our Email List!</h2>
+          <hr>
+          <textarea v-model="email" cols=20 rows=1 placeholder="Email" ></textarea>
+          <br>
+          <button id='submit' @click="addEmail">Submit</button>
+          <button id='Remove' @click="removeEmail">Remove</button>
+          <br>
+          <br>
+          <br>
+        </div>
+        
   </div>
+
 </template>
 
 <script>
@@ -36,6 +49,16 @@ export default{
   components: {
     MainMenu
   },
+  data() {
+    return{
+      Email: null
+    }    
+  },
+  methods: {
+    addEmail(){
+      
+    }
+  }
 }
 </script>
 <style scoped>
@@ -50,6 +73,9 @@ p{
 #pics{
   display: flex;
   align-items: center;
+}
+#email{
+  text-align: center;
 }
 img{
   height: 480px;
